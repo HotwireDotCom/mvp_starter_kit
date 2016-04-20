@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hotwire.com.mvp.sample" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data android:name="AA_DB_NAME" android:value="hw_mvp_starter.db" />
+        <meta-data android:name="AA_DB_VERSION" android:value="1" />
+        <activity
+            android:name="hotwire.com.mvp.sample.home.HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="hotwire.com.mvp.sample.results.ResultsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/results_title"
+            android:parentActivityName="hotwire.com.mvp.sample.home.HomeActivity">
+        </activity>
+        <activity
+            android:name="hotwire.com.mvp.sample.details.DetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/details_title"
+            android:parentActivityName="hotwire.com.mvp.sample.results.ResultsActivity">
+        </activity>
+    </application>
+
+</manifest>
