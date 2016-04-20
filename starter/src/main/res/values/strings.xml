@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MVP Starter</string>
+    <string name="first_activity_name">MVP Starter</string>
+    <string name="second_activity_name">Second Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="next_screen_button_text">Launch The Next Screen</string>
+    <string name="save_note_button">Save Note</string>
+</resources>
